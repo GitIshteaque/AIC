@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&I Consultancy Private Limited</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/hero-bg.jpg" as="image">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home" class="logo-text">A&I consultancy</a>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search...">
+                <div class="search-results"></div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="mobile-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#why-us">Why Choose Us</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Your Partner in Business Growth and Automation</h1>
+                <p>Empowering businesses with tailored services and cutting-edge automation technologies</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="btn primary">Explore Our Services</a>
+                    <a href="#contact" class="btn secondary">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Transforming Businesses Through Innovation</h3>
+                        <p>Founded in 2020, A&I Consultancy emerged from a vision to revolutionize how businesses operate in the digital age. We recognized that many organizations struggle with digital transformation and automation, often finding enterprise solutions out of reach. This inspired us to create a consultancy that delivers enterprise-grade solutions at prices that work for businesses of all sizes.</p>
+                        
+                        <div class="expertise-grid">
+                            <div class="expertise-item">
+                                <i class="fas fa-robot"></i>
+                                <h4>AI-Powered Solutions</h4>
+                                <p>Leveraging cutting-edge artificial intelligence to automate processes and drive decision-making</p>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-code"></i>
+                                <h4>Advanced Technology</h4>
+                                <p>Utilizing modern programming languages and frameworks to build robust, scalable solutions</p>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Business Intelligence</h4>
+                                <p>Converting data into actionable insights for strategic business growth</p>
+                            </div>
+                        </div>
+
+                        <div class="vision-statement">
+                            <h3>Our Vision</h3>
+                            <p>We envision a future where businesses of all sizes can harness the power of automation and artificial intelligence to operate efficiently, scale seamlessly, and compete effectively in the global marketplace. Our commitment is to be the bridge that connects ambitious businesses with transformative technology solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                
+                <div class="services-tabs">
+                    <button class="tab-button active" data-filter="all">All Services</button>
+                    <button class="tab-button" data-filter="finance">Finance</button>
+                    <button class="tab-button" data-filter="technology">Technology</button>
+                    <button class="tab-button" data-filter="business">Business</button>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Finance Services -->
+                    <div class="service-card" data-category="finance">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Accounts Management</h3>
+                            <p>Streamlined bookkeeping, financial reporting, and compliance solutions</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Automated bookkeeping systems</li>
+                                    <li>Real-time financial reporting</li>
+                                    <li>Tax compliance management</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="finance">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cost Management</h3>
+                            <p>Customized strategies to optimize operational expenses and enhance profitability</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Expense analysis and reduction</li>
+                                    <li>Budget optimization</li>
+                                    <li>Resource allocation</li>
+                                    <li>Profitability enhancement</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Technology Services -->
+                    <div class="service-card" data-category="technology">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Software Development</h3>
+                            <p>Tailor-made software solutions for specific business needs</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Custom application development</li>
+                                    <li>System integration</li>
+                                    <li>API development</li>
+                                    <li>Legacy system modernization</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Business Services -->
+                    <div class="service-card" data-category="business">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Business Incubator & Accelerator</h3>
+                            <p>Support for startups and growing businesses to achieve their potential</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Business plan development</li>
+                                    <li>Market entry strategy</li>
+                                    <li>Funding assistance</li>
+                                    <li>Growth acceleration</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="business">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Sales & Marketing Management</h3>
+                            <p>Comprehensive sales strategies and marketing solutions to drive growth</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Sales strategy development</li>
+                                    <li>Marketing campaign management</li>
+                                    <li>Lead generation</li>
+                                    <li>Market analysis</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="business">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Maintenance Management</h3>
+                            <p>Efficient upkeep of business operations to ensure reliability and continuity</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Preventive maintenance</li>
+                                    <li>Asset management</li>
+                                    <li>Performance monitoring</li>
+                                    <li>System optimization</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="business">
+                        <div class="service-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Stock & Inventory Management</h3>
+                            <p>Tools and solutions for effective inventory tracking and supply chain optimization</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Real-time inventory tracking</li>
+                                    <li>Supply chain optimization</li>
+                                    <li>Warehouse management</li>
+                                    <li>Order fulfillment</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="technology">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Design Fluctuator</h3>
+                            <p>Creative design services for branding, marketing materials, and more</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Brand identity design</li>
+                                    <li>Marketing collateral</li>
+                                    <li>UI/UX design</li>
+                                    <li>Visual content creation</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="business">
+                        <div class="service-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Complete Marketing Solutions</h3>
+                            <p>From strategy development to execution, including digital marketing campaigns</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Digital marketing</li>
+                                    <li>Content strategy</li>
+                                    <li>Social media management</li>
+                                    <li>Analytics and reporting</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="technology">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Website Development</h3>
+                            <p>AI-powered and custom-coded websites designed for optimal performance</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Custom website development</li>
+                                    <li>E-commerce solutions</li>
+                                    <li>CMS implementation</li>
+                                    <li>Website optimization</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-category="technology">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Business Automation</h3>
+                            <p>End-to-end automation solutions for streamlining processes and boosting productivity</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Process automation</li>
+                                    <li>Workflow optimization</li>
+                                    <li>AI integration</li>
+                                    <li>Productivity enhancement</li>
+                                </ul>
+                            </div>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="why-us" class="why-us">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Driven Excellence</h3>
+                        <p>Our expertise in artificial intelligence and machine learning enables us to deliver cutting-edge solutions that give your business a competitive advantage.</p>
+                        <ul class="benefit-features">
+                            <li>Advanced AI algorithms</li>
+                            <li>Intelligent automation</li>
+                            <li>Predictive analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Cost-Effective Solutions</h3>
+                        <p>We believe in delivering enterprise-grade solutions at prices that work for businesses of all sizes, ensuring maximum ROI for your investment.</p>
+                        <ul class="benefit-features">
+                            <li>Flexible pricing models</li>
+                            <li>Scalable solutions</li>
+                            <li>Value-driven results</li>
+                        </ul>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Tailored Approach</h3>
+                        <p>Every business is unique. We customize our solutions to match your specific needs, ensuring perfect alignment with your business goals.</p>
+                        <ul class="benefit-features">
+                            <li>Personalized strategies</li>
+                            <li>Industry-specific solutions</li>
+                            <li>Adaptable frameworks</li>
+                        </ul>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Proven Track Record</h3>
+                        <p>Our success is measured by the success of our clients. We've helped businesses across various industries achieve their goals and scale effectively.</p>
+                        <ul class="benefit-features">
+                            <li>Industry expertise</li>
+                            <li>Success stories</li>
+                            <li>Long-term partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="portfolio-filters">
+                    <button class="tab-button active" data-filter="all">All</button>
+                    <button class="tab-button" data-filter="automation">Automation</button>
+                    <button class="tab-button" data-filter="software">Software</button>
+                    <button class="tab-button" data-filter="marketing">Marketing</button>
+                    <button class="tab-button" data-filter="consulting">Consulting</button>
+                </div>
+                
+                <div class="case-studies-grid">
+                    <div class="case-study-card" data-category="automation">
+                        <div class="case-study-image">
+                            <img src="images/case-study-1.jpg" alt="Manufacturing Automation">
+                            <div class="case-study-overlay">
+                                <span class="category">Automation</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Manufacturing Process Automation</h3>
+                            <p class="client">Global Manufacturing Corp.</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-number">60%</span>
+                                    <span class="result-label">Efficiency Increase</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">40%</span>
+                                    <span class="result-label">Cost Reduction</span>
+                                </div>
+                            </div>
+                            <button class="view-case-study" onclick="openCaseStudy(1)">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="software">
+                        <div class="case-study-image">
+                            <img src="images/case-study-2.jpg" alt="E-commerce Platform">
+                            <div class="case-study-overlay">
+                                <span class="category">Software</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>E-commerce Platform Development</h3>
+                            <p class="client">RetailTech Solutions</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-number">200%</span>
+                                    <span class="result-label">Sales Growth</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">85%</span>
+                                    <span class="result-label">Customer Satisfaction</span>
+                                </div>
+                            </div>
+                            <button class="view-case-study" onclick="openCaseStudy(2)">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="marketing">
+                        <div class="case-study-image">
+                            <img src="images/case-study-3.jpg" alt="Digital Marketing Campaign">
+                            <div class="case-study-overlay">
+                                <span class="category">Marketing</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Digital Marketing Transformation</h3>
+                            <p class="client">Fashion Retail Brand</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-number">300%</span>
+                                    <span class="result-label">ROI Increase</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">150%</span>
+                                    <span class="result-label">Lead Generation</span>
+                                </div>
+                            </div>
+                            <button class="view-case-study" onclick="openCaseStudy(3)">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <div class="case-study-card" data-category="consulting">
+                        <div class="case-study-image">
+                            <img src="images/case-study-4.jpg" alt="Business Strategy">
+                            <div class="case-study-overlay">
+                                <span class="category">Consulting</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Business Process Optimization</h3>
+                            <p class="client">Logistics Solutions Inc.</p>
+                            <div class="results">
+                                <div class="result-item">
+                                    <span class="result-number">45%</span>
+                                    <span class="result-label">Operational Costs</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-number">90%</span>
+                                    <span class="result-label">Process Efficiency</span>
+                                </div>
+                            </div>
+                            <button class="view-case-study" onclick="openCaseStudy(4)">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study Modal -->
+            <div id="caseStudyModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+    </main>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <a href="https://www.google.com/maps/dir/22.5902592,88.3785728/A%26I+consultancy+Pvt.Ltd,+Tiljala+Road,+Gobra,+Kolkata,+West+Bengal/@22.5647625,88.352285,14z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x3a027766cb937f19:0x6ddb1164f6932866!2m2!1d88.3775124!2d22.5398665?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D" 
+                           target="_blank" 
+                           class="location-link">
+                            <p>A&I Consultancy Pvt.Ltd</p>
+                            <p>Kolkata, West Bengal</p>
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <a href="tel:+918617273074" class="phone-link">
+                            <p>Support: +91 8617273074</p>
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>artiflex2003@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 2:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="accounts">Accounts Management</option>
+                                <option value="cost">Cost Management</option>
+                                <option value="software">Software Development</option>
+                                <option value="incubator">Business Incubator</option>
+                                <option value="marketing">Sales & Marketing</option>
+                                <option value="maintenance">Maintenance Management</option>
+                                <option value="inventory">Stock & Inventory</option>
+                                <option value="design">Design Services</option>
+                                <option value="website">Website Development</option>
+                                <option value="automation">Business Automation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><strong>A&I Consultancy Pvt.Ltd</strong></p>
+                <p>Kolkata, West Bengal</p>
+                <p>+91 8617273074</p>
+                <p>artiflex2003@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 A&I Consultancy Private Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <button class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html> 
